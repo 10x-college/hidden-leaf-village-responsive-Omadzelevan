@@ -1,0 +1,245 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  color: #ffff;
+}
+
+.head {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ff6b1a;
+}
+
+.head div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  width: 100%;
+  gap: 1rem;
+  font-weight: 700;
+}
+
+.logo {
+  width: 2.4rem;
+  height: 2rem;
+}
+
+.header h2 {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.nav {
+  padding: 1rem;
+  background-color: #1a1a1a;
+}
+.navigation {
+  display: none;
+}
+
+.burger-menu {
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff6b1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.9rem;
+  gap: 1rem;
+}
+
+.hero {
+  width: 37.5rem;
+  height: 37.7rem;
+  background-color: #2a2a2ae5;
+  background-image: url("/assetss/g3173.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.hero h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #ffff;
+}
+
+.hero p {
+  font-weight: 500;
+  color: #ffffffda;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 3rem;
+}
+
+/* card */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  padding-bottom: 10rem;
+}
+.card {
+  width: 32.4rem;
+  height: 20rem;
+  border-radius: 1.2rem;
+  border-top: 4px solid #ff6b1a;
+  box-shadow: 0px 2px 8px 0px #0000001a;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.card-head {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+.card-head h2 {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+}
+
+.card-head img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.card p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1.6rem;
+  letter-spacing: 0%;
+  padding: 1rem;
+  color: #666666;
+}
+
+/* footer  */
+
+.footer {
+  background-color: #1a1a1a;
+  color: #ffff;
+  text-align: center;
+  height: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 1.2rem;
+}
+
+.desktop {
+  display: none;
+}
+/* desktop  */
+
+@media (min-width: 1024px) {
+  .head {
+    height: 20rem;
+  }
+  .head h1 {
+    font-size: 4rem;
+  }
+  .logo {
+    width: 6.78rem;
+    height: 5.8rem;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .nav {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navigation {
+    display: block;
+  }
+  .navigation ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  }
+
+  .navigation ul li a {
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 1.7rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #ffff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+  }
+  .navigation ul li a:hover {
+    color: #ffffff;
+    background-color: #ff6b1a;
+  }
+
+  .hero {
+    width: 100%;
+    background-size: 30rem;
+  }
+  .hero h2 {
+    font-size: 4rem;
+  }
+  .hero p {
+    font-size: 1.8rem;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 2rem; */
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  /* footer */
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}
